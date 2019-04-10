@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Barcode Generator</title>
+  <link rel="stylesheet" type="text/css" href="resource/StyleSheet.css">
+
+</head>
+<body>
+<h3>Barcode </h3>
+
+<script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/JsBarcode.all.min.js"></script>
+<input type="text" id="myText" value="barcode">
+<p>Click the "Create" To create Barcode</p>
+<button onclick="myFunction()">Create</button>
+<svg id="barcode"></svg>
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  JsBarcode("#barcode", x);
+}
+</script>
+</body>
+</html>
